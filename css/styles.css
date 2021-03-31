@@ -373,6 +373,9 @@ margin-left: 50px;
 .results {
     top: 55%;
 }
+.results li {
+    width: 300px;
+}
 #hrmin{
     bottom: 0px;
     color: white;
