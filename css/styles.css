@@ -1,5 +1,6 @@
 /*Header*/
 body{
+    background-image: url("../img/bg.png");
 	background-color: black;
 }
 #header-nav{
@@ -14,6 +15,7 @@ body{
     text-align: center;
     width: 100%;
     height: 90px;
+    padding-left: 50px;
 }
 .navbar-brand {
 	float:none;
@@ -30,31 +32,288 @@ body{
     bottom: 70px;
     top: auto !important;;
 }
+/*End-Header*/
 
+/*Body*/
+.row{
+    margin-top: 50px;
+}
+#circle1,#circle2,#circle3{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border-color: #39ff14;
+    border-style: solid;
+    border-width: 15px;
+    position: relative;
+    font-family: 'LCD' ;
+}
+#main-content{
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+}
+#circle1{
+    right: 20%;
+    top: 80%;
+}
+#circle3{
+    left: 20%;
+    top: 80%;
+}
+.tme {
+    position: absolute;
+}
+#hrmin{
+    bottom: 0px;
+    color: white;
+    font-size: 90px;
+    top: 60px;
+    left: 25%;
+}
+#sec {
+    font-size: 90px;
+    color: white;
+    top: 60px;
+    margin-left: 60px;
+    margin-left: 75px;
+}
+#dte {
+    font-size: 90px;
+    color: white;
+    bottom: 0px;
+    top: 50px;
+    margin-left: 25px;
+}
+#yr {
+    font-size: 30px;
+    color: white;
+    margin-left: 55px;
+    top: 180px;
+    position: relative;
+}
+#tiles{
+    position: absolute;
+    bottom: 0px;
+    top: 700px;
+}
+#tile1_box,#tile2_box{
+    height: 300px;
+    width: 500px;
+    border-style: solid;
+    border-color: lime;
+}
+#tile1_box {
+    background-image: url("../img/tile1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+}
+#tile2_box {
+    background-image: url("../img/tile2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+}
+#tile1_box span,#tile2_box span{
+    text-align: center;
+    color: white;
+    border-style: solid;
+    border-color: lime;
+    width: 495px;
+    position: absolute;
+    bottom: 0px;
+}
+#tile1_box:hover,#tile2_box:hover{
+     box-shadow: 0px 0px 16px 11px white;
+}
+.controls {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    width: 100%;
+}
+.button {
+    color: #bbb;
+    font-size: 4vw;
+    margin: 0 0.5em;
+    text-decoration: none;
+}
+.button:first-child {
+    margin-left: 0;
+}
+.button:last-child {
+    margin-right: 0;
+}
+.button:hover {
+    color: white;
+}
+.stopwatch {
+    font-size: 20vw;
+    height: 100%;
+    line-height: 100vh;
+    text-align: center;
+    text-shadow: 0 0 3px lime, 0 0 5px white;
+}
+.results {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    top: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+}
+.results li {
+    border-style: solid;
+    border-color: lime;
+    width: 500px;
+    font-size: xx-large;
+}
+/*End-Body*/
 
-
-
-
-
-
+/*footer*/
+footer{
+    position: absolute;
+    bottom: 0px;
+    top: 150%;
+    right: 0px;
+    left: 0px;
+    height: 40px;
+    text-align: center;
+    border-bottom-width: 1px;
+}
+/*end-footer*/
 
 /********** Large devices only(lg) **********/
 @media (min-width: 1200px) {
+    #tile1_box, #tile2_box{
+    margin: 0px 40px;
+}
 }
 
 /********** Medium devices only(md) **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  
+/*Body*/
+#circle1, #circle2, #circle3 {
+    width: 220px;
+    height: 220px;
+}
+#tiles{
+        top: 600px;
+}
+#tile1_box, #tile2_box{
+    width: 450px;
+    margin: 0px 10px;
+}
+#tile1_box span, #tile2_box span {
+    width: 445px;
+}
+.stopwatch {
+    position: absolute;
+    top: 10%;
+}
+#hrmin{
+        bottom: 0px;
+    color: white;
+    font-size: 70px;
+    top: 40px;
+    left: 16%;
+}
+#sec {
+    font-size: 90px;
+    color: white;
+    top: 30px;
+    margin-left: 55px;
+}
+#dte {
+        font-size: 70px;
+    color: white;
+    bottom: 0px;
+    top: 30px;
+    margin-left: 15px;
+}
+#yr {
+    font-size: 28px;
+    color: white;
+    margin-left: 30px;
+    top: 130px;
+    position: relative;
+}
+footer{
+    top: 140%
+    }
+
+/*End-Body*/
 }
 
 /********** Small devices only(sm) **********/
 @media (min-width: 768px) and (max-width: 991px) {
+    /*Body*/
+#circle1,#circle2,#circle3{
+    height: 180px;
+    width: 180px;
 }
+#tile1_box, #tile2_box{
+    width: 350px;
+    margin: 20px 0px;
+}
+#tile1_box span, #tile2_box span {
+ width: 345px;
+}
+#tiles{
+   top: 500px; 
+}
+.stopwatch {
+    line-height: 80vh;
+}
+.results {
+        top: 75%;
+}
+#hrmin{
+        bottom: 0px;
+    color: white;
+    font-size: 60px;
+    top: 30px;
+    left: 16%;
+}
+#sec {
+    font-size: 60px;
+    color: white;
+    top: 30px;
+    margin-left: 40px;
+}
+#dte {
+        font-size: 50px;
+    color: white;
+    bottom: 0px;
+    top: 30px;
+    margin-left: 15px;
+}
+#yr {
+    font-size: 22px;
+    color: white;
+    margin-left: 22px;
+    top: 100px;
+    position: relative;
+}
+/*End-Body*/
+footer{
+    top: 170%
+    }
+
+}
+
 
 /********** Extra small devices only(xs) **********/
 @media (max-width: 767px) {
+
+/*Header*/
 #brand{
-    font-size: 1.9em;
+    font-size: 1.8em;
 }
 .glyphicon{
     font-size: 31px;
@@ -62,5 +321,87 @@ body{
     left: 8px;
     font-size: 2.2em;
 }
+/*End-Header*/
 
+/*Body*/
+#circle1,#circle2,#circle3{
+    height: 220px;
+    width: 220px;
+    /*margin-right: 100px;
+    margin-left: 100px;*/
+}
+#circle1,#circle3{
+    right: 0%;
+    top: 0%;
+    visibility: hidden;
+}
+#circle2{
+    float: none;
+    left: 10px;
+}
+.row {
+    margin-top: 20px;
+}
+#main-content{
+margin-left: 50px;
+}
+#tiles{
+    top: 400px;
+    width: 250px;
+}
+#tile1, #tile2{
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 280px;
+    margin: 20px 0px;
+    right: 10px;
+}
+#tile1_box, #tile2_box{
+    width: 280px;
+    /*margin: 0 auto 15px;*/
+}
+#tile1_box span, #tile2_box span{
+    width: 275px;
+}
+.stopwatch {
+    line-height: 50vh;
+}
+.results {
+    top: 55%;
+}
+#hrmin{
+    bottom: 0px;
+    color: white;
+    font-size: 60px;
+    top: 30px;
+    left: 16%;
+    margin-left: 10px;
+}
+#sec {
+    font-size: 60px;
+    color: white;
+    top: 30px;
+    margin-left: 40px;
+}
+#dte {
+    font-size: 22px;
+    color: white;
+    bottom: 0px;
+    top: 110px;
+    margin-left: 70px;
+    visibility: visible;
+}
+#yr {
+    font-size: 25px;
+    color: white;
+    margin-left: 45px;
+    top: 130px;
+    position: relative;
+    visibility: visible;
+}
+/*End-Body*/
+footer {
+    font-size: 2.5vw;
+    top: 1150px;
+}
 }

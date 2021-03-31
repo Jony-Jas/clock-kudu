@@ -1,0 +1,13 @@
+{
+	"tile1": [
+		{
+			"name":"Stopwatch",
+			"img":"img/tile1.png"
+	}],
+
+	"tile-2": [
+		{
+			"name":"Time Converter",
+			"img":"img/tile2.png"
+	}]
+}
