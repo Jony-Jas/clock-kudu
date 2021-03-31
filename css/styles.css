@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "LCD";
+  src: url("../fonts/LCDRegular.ttf") format("truetype");
+}
 /*Header*/
 body{
     background-image: url("../img/bg.png");
@@ -69,7 +73,7 @@ body{
     color: white;
     font-size: 90px;
     top: 60px;
-    left: 25%;
+    left: 20%;
 }
 #sec {
     font-size: 90px;
@@ -177,9 +181,9 @@ body{
 
 /*footer*/
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0px;
-    top: 150%;
+    top: 750px;
     right: 0px;
     left: 0px;
     height: 40px;
@@ -244,7 +248,7 @@ footer{
     position: relative;
 }
 footer{
-    top: 140%
+        top: 650px;
     }
 
 /*End-Body*/
@@ -302,7 +306,7 @@ footer{
 }
 /*End-Body*/
 footer{
-    top: 170%
+    top: 900px;
     }
 
 }
@@ -402,6 +406,6 @@ margin-left: 50px;
 /*End-Body*/
 footer {
     font-size: 2.5vw;
-    top: 1150px;
+    top: 530px;
 }
 }
