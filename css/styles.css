@@ -73,7 +73,7 @@ body{
     color: white;
     font-size: 90px;
     top: 60px;
-    left: 20%;
+    left: 16%;
 }
 #sec {
     font-size: 90px;
@@ -189,7 +189,14 @@ footer{
     height: 40px;
     text-align: center;
     border-bottom-width: 1px;
+    font-size: 16px;
 }
+.version {
+    position: absolute;
+    color: blue;
+    font-size: 13px;
+}
+
 /*end-footer*/
 
 /********** Large devices only(lg) **********/
@@ -225,7 +232,7 @@ footer{
     color: white;
     font-size: 70px;
     top: 40px;
-    left: 16%;
+    left: 15%;
 }
 #sec {
     font-size: 90px;
@@ -282,7 +289,7 @@ footer{
     color: white;
     font-size: 60px;
     top: 30px;
-    left: 16%;
+    left: 10%;
 }
 #sec {
     font-size: 60px;
@@ -341,7 +348,7 @@ footer{
 }
 #circle2{
     float: none;
-    left: 10px;
+    /*left: 10px;*/
 }
 .row {
     margin-top: 20px;
@@ -351,7 +358,7 @@ margin-left: 50px;
 }
 #tiles{
     top: 400px;
-    width: 250px;
+    width: 260px;
 }
 #tile1, #tile2{
     padding-right: 0px;
@@ -381,8 +388,8 @@ margin-left: 50px;
     color: white;
     font-size: 60px;
     top: 30px;
-    left: 16%;
-    margin-left: 10px;
+    left: 20%;
+    /*margin-left: 10px;*/
 }
 #sec {
     font-size: 60px;
@@ -395,13 +402,13 @@ margin-left: 50px;
     color: white;
     bottom: 0px;
     top: 110px;
-    margin-left: 70px;
+    margin-left: 60px;
     visibility: visible;
 }
 #yr {
     font-size: 25px;
     color: white;
-    margin-left: 45px;
+    margin-left: 35px;
     top: 130px;
     position: relative;
     visibility: visible;
@@ -410,5 +417,8 @@ margin-left: 50px;
 footer {
     font-size: 2.5vw;
     top: 530px;
+}
+.version {
+font-size: 2.2vw;
 }
 }

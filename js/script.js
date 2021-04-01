@@ -3,8 +3,8 @@ var date = new Date();
 var h=date.getHours();
 var m=date.getMinutes();
 var s=date.getSeconds();
-document.getElementById("hrmin").innerHTML=h+":"+m;
-document.getElementById("sec").innerHTML=s;
+document.getElementById("hrmin").innerHTML=format(h)+":"+format(m);
+document.getElementById("sec").innerHTML=format(s);
 },1000);
 
 setInterval(function dates(){
@@ -12,21 +12,22 @@ var date = new Date();
 var d = date.getDate();
 var y = date.getFullYear();
 var m = date.getMonth()+1;
-function month(){
-	if(m<10)
+var dy = day();
+
+document.getElementById("dte").innerHTML = format(d)+"-"+format(m);
+document.getElementById("yr").innerHTML = dy+"|"+y;
+},1000);
+
+function format(val) {
+	if(val<10)
 	{
-		return "0"+m;
+		return "0"+val;
 	}
 	else
 	{
-		return m;
+		return val;
 	}
-} 
-var dy = day();
-
-document.getElementById("dte").innerHTML = d+"-"+month();
-document.getElementById("yr").innerHTML = dy+"|"+y;
-},1000);
+}
 
 function day() {
 	var d = new Date();
